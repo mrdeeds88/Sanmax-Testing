@@ -1,0 +1,100 @@
+/*
+Theme Name: Theme Supper Slice
+Author: The wind
+Author URL: https://www.facebook.com/lamnguyen.6292
+Description: Theme support slice html from PSD be fast by  define class. User only add class into html.
+Version: 1.0.0
+*/
+
+/*define font-family*/
+@font-face {
+  font-family: 'supriaSans-light';
+  src: url('../fonts/SupriaSans-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/SupriaSans-Light.otf')  format('opentype'),
+      url('../fonts/SupriaSans-Light.woff') format('woff'), url('../fonts/SupriaSans-Light.ttf')  format('truetype'), url('../fonts/SupriaSans-Light.svg#SupriaSans-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'supriaSans-bold';
+  src: url('../fonts/SupriaSans-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/SupriaSans-Bold.otf')  format('opentype'),
+      url('../fonts/SupriaSans-Bold.woff') format('woff'), url('../fonts/SupriaSans-Bold.ttf')  format('truetype'), url('../fonts/SupriaSans-Bold.svg#SupriaSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'supriaSans-mediumitalic';
+  src: url('../fonts/SupriaSans-MediumItalic.eot?#iefix') format('embedded-opentype'),  url('../fonts/SupriaSans-MediumItalic.otf')  format('opentype'),
+      url('../fonts/SupriaSans-MediumItalic.woff') format('woff'), url('../fonts/SupriaSans-MediumItalic.ttf')  format('truetype'), url('../fonts/SupriaSans-MediumItalic.svg#SupriaSans-MediumItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'supriaSans-regular';
+  src: url('../fonts/SupriaSans-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/SupriaSans-Regular.otf')  format('opentype'),
+      url('../fonts/SupriaSans-Regular.woff') format('woff'), url('../fonts/SupriaSans-Regular.ttf')  format('truetype'), url('../fonts/SupriaSans-Regular.svg#SupriaSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, html body {
+    color: #313031;
+    font-size: 16px;
+    font-family: 'supriaSans-regular', 'sans-serif';
+}
+
+
+/*define font*/
+h1,h2,h3,h4 {
+  font-weight: bold;
+}
+h1{font-size: 36px;}
+h2{font-size:30px;}
+h3{font-size: 24px;}
+h4{font-size:30px;}
+
+/*define color*/
+$white: #fff;
+$red: #FF0000;
+$black: #001320;
+$orange: #FFA500;
+$blue: #006AFF;
+$puple: #751e77;
+
+/*define button*/
+$btn-bg-menu: #D4D3D3;
+$btn-menu-color: #333;
+$btn-bg-menu-hover: #37A911;
+$btn-menu-color-hover: #fff;
+.navbar-nav>li>a{color: $btn-menu-color; background: $btn-bg-menu; &.active,&:hover,&:focus,&:active{color:$btn-menu-color-hover;background:$btn-bg-menu-hover }}
+.navbar-nav>li{margin: 0 2px;}.sub-menu{display: none}
+
+/*general style*/
+.full-width{width: 100%;} .full-height{height: 100%;}
+.border-none{border: none}
+
+$btn-bg: #751e77;
+$btn-color-border: #751e77;
+$btn-color-text: #fff;
+$btn-bg-hover: #fff;
+$btn-text-hover: #751e77;
+a.btn-tw-puple {
+    line-height: 32px;
+}
+input, select {
+  background: #e9e2d9;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  padding: 0 5px;
+}
+a {
+  color: $black;
+}
+a:hover, a:focus {
+  text-decoration: none;
+    color: $orange;
+}

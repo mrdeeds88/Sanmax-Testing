@@ -1,0 +1,28 @@
+body {
+  width: 100%
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+.inline {
+  display: inline-block;
+}
+
+// Block
+.block {
+  display: block;
+  .block-center {
+    margin: 0 auto;
+  }
+}

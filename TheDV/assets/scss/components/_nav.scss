@@ -1,0 +1,20 @@
+.nav-list {
+	list-style: none;
+}
+
+.nav-inline {
+	.nav-item {
+		display: inline-block;
+		border-radius: $border-radius-default;
+
+		&.active {
+			background: $secondary-color;
+		}
+	}
+	a {
+		padding: $padding-default;
+		display: block;
+		color: #111111;		
+		text-decoration: none;
+	}
+}

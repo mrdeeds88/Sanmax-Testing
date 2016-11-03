@@ -1,0 +1,220 @@
+.main-logo {
+	margin-top: 15px;
+}
+
+.header-top {
+	margin: 15px auto;
+}
+
+.social-header {
+	text-align: right;
+
+	ul {
+		li {
+			display: inline-block;
+			margin-right: 5px;
+
+			a {
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				background: $color-green;
+				color: $color-white;
+				font-size: 11px;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 23px;
+				transition: background .25s ease;
+				@extend .hover-effect-time;
+
+				&:hover {
+					background: $color-yellow;
+				}
+			}
+
+
+			&:last-child {
+				border-left: 1px solid $color-black;
+				padding-left: 5px;
+			}
+
+			&.select-language {
+			}
+		}
+	}
+}
+
+.main-nav {
+	list-style: none;
+	text-align: right;
+	margin-top: 0px;
+
+	li {
+		display: inline-block;
+		margin: 0px 10px;
+
+		a {
+			display: block;
+			position: relative;
+			//font-family: "Supria Sans",sans-serif;
+			font-family: "myriadPro-regular",sans-serif;
+			color: $color-black;
+			font-size: 1.6rem;
+			@extend .hover-effect-time;
+
+			&:hover {
+				color: $color-green;
+			}
+		}
+
+		&.active {
+			a {
+				color: $color-green;
+			}
+		}
+
+		&.nav-verhuurder {
+			a {
+				display: inline-block;
+				width: auto;
+				-webkit-appearance: none;
+				border: 1px solid $color-yellow;
+				border-radius: 10px;
+				outline: 0;
+				color: $color-black;
+				font-family: "Supria Sans",sans-serif;
+				text-align: center;
+				text-decoration: none;
+				padding: 6px 10px;
+				background: $color-yellow;
+				@extend .hover-effect-time;
+
+				&:hover {
+					color: $color-yellow;
+					background-color: $color-white;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.header-bottom {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+
+	.main-book {
+		text-align: center;
+		background: rgba(80,172,191,0.7);
+		padding: 30px;
+		border-radius: 10px;
+		margin-top: 105px;
+
+		h4 {
+			font-weight: normal;
+			font-style: italic;
+			color: $color-white;
+			font-size: 38px;
+			margin-bottom: 20px;
+			font-family: "blogger-sans-light-italic";
+		}
+
+		.book-line {
+			margin-bottom: 15px;
+
+			label {
+				color: $color-white;
+				display: block;
+				margin-bottom: 15px;
+				font-size: 1.6rem;
+				text-align: left;
+				font-family: "blogger-sans-bold";
+			}
+
+			input {
+				display: inline-block;
+				outline: none;
+				background-color: transparent;
+				display: block;
+				height: 40px;
+				line-height: 41px;
+				width: 100%;
+				font-weight: 300;
+				margin-bottom: 5px;
+				background: #e9e2d9;
+				font-size: 1.4rem;
+				border: 0;
+				border-radius: 5px;
+				padding-left: 10px;
+				color: $color-black;
+				transition: color .25s ease, border-color .25s ease, border-width .25s ease;
+				border: 1px solid transparent;
+			}
+
+			button {
+				display: inline-block;
+				width: auto;
+				-webkit-appearance: none;
+				border: 1px solid $color-yellow;
+				border-radius: 10px;
+				outline: 0;
+				color: $color-black;
+				font-family: "blogger-sans-bold",sans-serif;
+				text-align: center;
+				text-decoration: none;
+				font-size: 1.6rem;
+				background: $color-yellow;
+				padding: 11px 45px;
+				margin-top: 30px;
+
+				@extend .hover-effect-time;
+				&:hover {
+					color: $color-yellow;
+					background-color: $color-white;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.nav-right {
+		margin-right: 40px;
+
+		ul {
+			list-style: none;
+			text-align: right;
+
+			li {
+				a {
+					display: block;
+					padding: 10px 15px 20px 0px;
+					color: $color-black;
+					font-style: italic;
+					font-size: 16px;
+					position: relative;
+					border-bottom: 2px solid transparent;
+					border-image: linear-gradient(to right, transparent 45%, #0aa0b9 100%);
+					border-image-slice: 1;
+					font-family: "blogger-sans-light-italic";
+					font-weight: bold;
+
+					@extend .hover-effect-time;
+
+					&:hover {
+						color: $color-green;
+					}
+				}
+
+				&:hover {
+					background: url(/images/hover-bg.png) no-repeat;
+					background-size: cover;
+				}
+			}
+		}
+	}
+}

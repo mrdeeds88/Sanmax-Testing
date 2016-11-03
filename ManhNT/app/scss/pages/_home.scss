@@ -1,0 +1,29 @@
+.background-top {
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  height: 900px;
+  width: 100%;
+  z-index: -999998;
+  position: absolute;
+
+  img {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    height: 1272.39px;
+    max-height: none;
+    max-width: none;
+    z-index: -999999;
+
+    width: 100% !important;
+    top: 0 !important;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+    -ms-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+  }
+}

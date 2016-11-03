@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'supriaSans-light';
+  src: url('../fonts/SupriaSans-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/SupriaSans-Light.otf')  format('opentype'),
+	     url('../fonts/SupriaSans-Light.woff') format('woff'), url('../fonts/SupriaSans-Light.ttf')  format('truetype'), url('../fonts/SupriaSans-Light.svg#SupriaSans-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'supriaSans-bold';
+  src: url('../fonts/SupriaSans-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/SupriaSans-Bold.otf')  format('opentype'),
+	     url('../fonts/SupriaSans-Bold.woff') format('woff'), url('../fonts/SupriaSans-Bold.ttf')  format('truetype'), url('../fonts/SupriaSans-Bold.svg#SupriaSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'supriaSans-mediumitalic';
+  src: url('../fonts/SupriaSans-MediumItalic.eot?#iefix') format('embedded-opentype'),  url('../fonts/SupriaSans-MediumItalic.otf')  format('opentype'),
+	     url('../fonts/SupriaSans-MediumItalic.woff') format('woff'), url('../fonts/SupriaSans-MediumItalic.ttf')  format('truetype'), url('../fonts/SupriaSans-MediumItalic.svg#SupriaSans-MediumItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'supriaSans-regular';
+  src: url('../fonts/SupriaSans-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/SupriaSans-Regular.otf')  format('opentype'),
+	     url('../fonts/SupriaSans-Regular.woff') format('woff'), url('../fonts/SupriaSans-Regular.ttf')  format('truetype'), url('../fonts/SupriaSans-Regular.svg#SupriaSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/// Variables
+/// @see https://www.smashingmagazine.com/2016/01/variables-in-css-architecture/
+
+/// Grid
+/// Using rem-units to scale for accessibility (based on the user's browser settings, default 1rem equals 16px)
+/// @see layout/grid
+/// grid class specified below ($breakpoints)
+$grid-max-width:  120rem;
+$grid-gutter:     1.4rem;
+$grid-columns:    12;
+$grid-show-outlines: false; //to show the grid's outlines
+
+/// Breakpoints - used by the grid and media query manager
+/// @type Map
+/// @prop {size}: [min-width] - breakpoint name and minimum width for media queries
+$breakpoints: (
+  'xs': 0,
+  'sm': 420px,
+  'md': 720px,
+  'lg': 960px,
+  'xl': 1200px
+);
+
+/// mq() - media query manager
+/// @see vendor/mq
+/// @link https://github.com/sass-mq/sass-mq
+$mq-breakpoints: $breakpoints;
+$mq-base-font-size: 16px;
+$mq-show-breakpoints: ();
+
+
+/// Fonts
+/// @TODO: choose color variable naming convention
+$supria:  'Supria Sans', sans-serif;
+$supriaSans-bold:  'supriaSans-bold', sans-serif;
+$raleway:  'Raleway', sans-serif;
+$supriaSans-light:  'supriaSans-light', sans-serif;
+$supriaSans-regular:  'supriaSans-regular', sans-serif;
+$supriaSans-mediumitalic:  'supriaSans-mediumitalic', sans-serif;
+
+$font-size: 1.4rem;
+$font-primary:    $supria;
+
+/// Colors
+$blue:  #3a8f9c;
+$blue-dark: #0c8ca7;
+$green: #51D66B;
+$yellow: #FFBF3F;
+$brown-light: #F1E3CB;
+
+
+$white:         #fff;
+$gray-light:    #e5e5e5;
+$gray:          #999;
+$gray-dark:     #333;
+$black:         #000;
+$gray:          #666666;
+
+$color-default: #000; //default text color
+
+$color-primary:       $blue;
+$color-primary-light-1: #1AC6FF;
+$color-primary-light-2: #5ED7FF;
+$color-primary-dark:  #00384A;
+
+$color-secondary:       $green;
+$color-secondary-light: lighten($green, 10%);
+$color-secondary-dark:  darken($green, 10%);
+
+$color-success: green;
+$color-warning: orange;
+$color-alert:   red;
+
+
+/// Form
+$form-height:   40px;
+
+
+/// Dimensions - Widths and heights
+$height-header: 100px;  //example!
+$height-footer: 100px;  //example!
+
+
+%trs-cl{
+	-webkit-transition: color .3s ease-in-out, background .3s ease-in-out;
+	-o-transition: color .3s ease-in-out, background .3s ease-in-out;
+	transition: color .3s ease-in-out, background .3s ease-in-out;
+}
+
+%trs-op{
+	-webkit-transition: opacity .3s ease-in-out;
+	-o-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+}

@@ -1,0 +1,22 @@
+.no-gutter {
+	> [class*='col-'] {
+		padding-right:0;
+		padding-left:0;
+	}
+}
+
+.money {
+	font: $money-font;
+}
+
+.aspect-16by9 {
+	@include aspect-ratio(16, 9);
+}
+
+.text-primary {
+	color: $primary-color;
+}
+
+.has-padding {
+	padding: $default-gutter-width;
+}

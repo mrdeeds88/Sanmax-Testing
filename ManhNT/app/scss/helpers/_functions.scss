@@ -1,0 +1,4 @@
+@function jwl-font-path($path) {
+  @return font-url($path, true);
+}
+

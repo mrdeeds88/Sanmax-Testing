@@ -1,0 +1,37 @@
+@import "../vendor/variables";
+@import "../vendor/mixins";
+
+footer {
+    background: url('../images/footer-bg.png') no-repeat;
+    background-size: cover;
+}
+
+.f-main {
+    position: relative;
+}
+
+.f-bg-pre {
+    position: absolute;
+    top: -94px;
+}
+
+.f-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.f-des {
+    margin: 10px 0px 10px 0px;
+}
+
+.f-navigation {
+    padding: 40px 0px 15px 0px;
+}
+
+.f-copyright {
+    padding: 25px 0px;
+}
+
+.f-frm .form-control {
+    margin-bottom: 10px;
+}

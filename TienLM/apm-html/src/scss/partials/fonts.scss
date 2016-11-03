@@ -1,0 +1,16 @@
+@import "../vendor/variables";
+@import "../vendor/mixins";
+
+.f-i {
+    font-style: italic;
+}
+
+.f-b {
+    font-weight: bold;
+}
+
+@each $f in $series {
+    .f-#{$f} {
+        font-size: #{$f}px;
+    }
+}

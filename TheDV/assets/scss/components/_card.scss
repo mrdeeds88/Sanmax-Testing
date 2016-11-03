@@ -1,0 +1,27 @@
+.card {
+	.card-panel {
+		background: $primary-color;
+		color: #FFFFFF;
+		display: block;
+		padding: $default-gutter-width;
+	}
+	.card-title {
+		font-size: 1.8rem;
+		height: 4.5rem;
+		display: block;
+		overflow: hidden;		
+	}
+
+	.card-list {
+		list-style: none;
+
+		.card-list-icon {
+			position: absolute;
+			left: 0;
+		}
+		li {
+			position: relative;
+			padding-left: 20px;		
+		}
+	}
+}

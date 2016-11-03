@@ -1,0 +1,11 @@
+.grid-columns {
+	display: flex;
+	flex-wrap: wrap;
+	.column-md-4 {
+		width: 33.333%;
+	}
+
+	.column-md-3 {
+		width: 25%;
+	}
+}

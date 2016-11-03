@@ -1,0 +1,25 @@
+$line-color: #4cbdce;
+
+.grid-home-list {
+	position: relative;
+	&::before {
+		position: absolute;
+		left: 33.3333%;
+		content: '';
+		top: 0;
+		bottom: 0;
+		width: 1px;
+		background: linear-gradient($line-color 60%, #DDDDDD 95%);
+		z-index: 9;
+	}
+	&::after {
+		position: absolute;
+		right: 33.3333%;
+		content: '';
+		top: 0;
+		bottom: 0;
+		width: 1px;
+		z-index: 9;
+		background: linear-gradient($line-color 60%, #DDDDDD 95%);
+	}
+}

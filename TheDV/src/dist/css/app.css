@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'SupriaSans-light';
+  src: url("../fonts/SupriaSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SupriaSans-Light.otf") format("opentype"), url("../fonts/SupriaSans-Light.woff") format("woff"), url("../fonts/SupriaSans-Light.ttf") format("truetype"), url("../fonts/SupriaSans-Light.svg#SupriaSans-Light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SupriaSans-bold';
+  src: url("../fonts/SupriaSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SupriaSans-Bold.otf") format("opentype"), url("../fonts/SupriaSans-Bold.woff") format("woff"), url("../fonts/SupriaSans-Bold.ttf") format("truetype"), url("../fonts/SupriaSans-Bold.svg#SupriaSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SupriaSans-mediumitalic';
+  src: url("../fonts/SupriaSans-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SupriaSans-MediumItalic.otf") format("opentype"), url("../fonts/SupriaSans-MediumItalic.woff") format("woff"), url("../fonts/SupriaSans-MediumItalic.ttf") format("truetype"), url("../fonts/SupriaSans-MediumItalic.svg#SupriaSans-MediumItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SupriaSans-regular';
+  src: url("../fonts/SupriaSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SupriaSans-Regular.otf") format("opentype"), url("../fonts/SupriaSans-Regular.woff") format("woff"), url("../fonts/SupriaSans-Regular.ttf") format("truetype"), url("../fonts/SupriaSans-Regular.svg#SupriaSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+h1 {
+  font-size: 3rem; }
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
+
+.money {
+  font: 2.2rem "SupriaSans-bold", sans-serif; }
+
+.aspect-16by9 {
+  position: relative; }
+  .aspect-16by9:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%; }
+  .aspect-16by9 > .aspect-content {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.text-primary {
+  color: #0c8ca7; }
+
+.has-padding {
+  padding: 1.5rem; }
+
+.grid-columns {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .grid-columns .column-md-4 {
+    width: 33.333%; }
+  .grid-columns .column-md-3 {
+    width: 25%; }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 1.6rem;
+  background: url("../img/background.jpg") no-repeat;
+  background-size: cover; }
+
+/**
+* Components
+*/
+.header {
+  height: 104px;
+  background: #aabfdf; }
+
+.nav-list {
+  list-style: none; }
+
+.nav-inline .nav-item {
+  display: inline-block;
+  border-radius: 6px 6px; }
+  .nav-inline .nav-item.active {
+    background: #ffbf40; }
+
+.nav-inline a {
+  padding: 8px 15px;
+  display: block;
+  color: #111111;
+  text-decoration: none; }
+
+.card .card-panel {
+  background: #0c8ca7;
+  color: #FFFFFF;
+  display: block;
+  padding: 1.5rem; }
+
+.card .card-title {
+  font-size: 1.8rem;
+  height: 4.5rem;
+  display: block;
+  overflow: hidden; }
+
+.card .card-list {
+  list-style: none; }
+  .card .card-list .card-list-icon {
+    position: absolute;
+    left: 0; }
+  .card .card-list li {
+    position: relative;
+    padding-left: 20px; }
+
+/**
+* pages
+*/
+.grid-home-list {
+  position: relative; }
+  .grid-home-list::before {
+    position: absolute;
+    left: 33.3333%;
+    content: '';
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(#4cbdce 60%, #DDDDDD 95%);
+    z-index: 9; }
+  .grid-home-list::after {
+    position: absolute;
+    right: 33.3333%;
+    content: '';
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    z-index: 9;
+    background: linear-gradient(#4cbdce 60%, #DDDDDD 95%); }

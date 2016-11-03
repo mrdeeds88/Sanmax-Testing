@@ -1,0 +1,140 @@
+header {
+	padding-top: 10px;
+	background: url(../images/bg-header.png) no-repeat;
+}
+.logo {
+	img {
+		padding-top: 40px;
+	}
+}
+.navigation-main {
+	li {
+		display: inline-block;
+		list-style: none;
+		margin-left: 10px;
+		a{
+			padding: 10px;
+			&:hover {
+				color: $white;
+			}
+		}
+		&:nth-of-type(6) {
+			padding: 10px 10px;
+			border-radius: 10px;
+			background: #ffbf40;
+		}
+	}
+}
+.main-menu {
+	margin-top: 15px;
+}
+.wrap-menu {
+    margin: 10px 0 35px 0;
+    .social {
+    	a {
+    		margin: 0 5px;
+			&:nth-of-type(2) {
+				i{
+					padding-right: 4px;
+				}
+    		}
+    	}
+    	i {
+		    padding: 4px 7px 0 0;
+    		font-size: 12px;
+    		height: 20px;
+    		width: 20px;
+    		display: inline-block;
+    		border-radius: 50%;
+    		color: #fff;
+    		background: #0c8ca7;
+    	}
+    	a{
+    		&:last-child {
+    			background: transparent;
+    		}
+    	}
+    }
+}
+.social {
+	text-align: right;
+}
+.navigation-main {
+	text-align: right;
+}
+.field-item {
+	margin-top: 10px;
+	width: 100%;
+	display: inline-block;
+	label {
+		display: block;
+	}
+	.from, .to, .person {
+		float: left;
+		width: 30%;
+		margin-left: 10px;
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+}
+.wrap-form{
+    background: rgba(80,172,191,0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 88%;
+    margin-top: 135px;
+    h4{
+    	text-align: center;
+    	color: $white;
+    }
+    label {
+    	color: $white;
+    }
+}
+.form-submit {
+	margin-top: 20px;
+	button {
+		display: block;
+		margin: 0 auto;
+		padding-right: 50px;
+		padding-left: 50px;
+		font-size: 18px;
+		color: $black;
+		border-radius: 8px;
+	    background-color: #FFBF3F;
+	    text-decoration: none;
+        border: 1px solid #FFBF3F;
+        &:hover {
+        	background: #fff;
+        	color: #FFBF3F;
+        }
+	}
+}
+.menu-right {
+	width: 100%;
+	margin-top: 50px;
+	li{
+		margin: 10px 0;
+		list-style: none;
+		a{
+			font-weight: bold;
+			width: 100%;
+			float: right;
+			text-align: right;
+			display: block;
+		    padding: 20px 15px 20px 0px;
+		    color: #000;
+		    font-style: italic;
+		    font-size: 16px;
+		    position: relative;
+		    border-bottom: 2px solid transparent;
+		    border-image: linear-gradient(to right, transparent 45%, #0aa0b9 100%);
+		    border-image-slice: 1;
+		    &:hover {
+	    	    background: url(../images/hover-bg.png) no-repeat;
+    			background-size: cover;
+		    }
+		}
+	}
+}

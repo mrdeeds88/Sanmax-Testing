@@ -1,0 +1,33 @@
+$font-primary: "supriaSans-light";
+
+/**
+GENERATE
+**/
+$color-black: #000000;
+$color-black-light: #485667;
+$color-yellow: #ffbf40;
+$color-white: #ffffff;
+$color-blue: #46a6ba;
+$color-yellow-light: #f1e3cb;
+$color-yellow-lighter: #efe9e6;
+
+/**
+HEADER
+**/
+$header-background: "../img/header-background.png";
+
+
+/**
+FOOTER
+**/
+$footer-background: "../img/footer-background.png";
+$footer-background-bottom: "../img/footer-background-bottom.png";
+
+
+/**
+Bootstrap variables
+**/
+$grid-max-width: 120rem;
+$grid-gutter: 1.4rem;
+$grid-columns: 12;
+$icon-font-path: "../fonts/";

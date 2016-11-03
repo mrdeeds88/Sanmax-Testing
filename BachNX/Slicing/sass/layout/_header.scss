@@ -1,0 +1,219 @@
+.block-header {
+	position: relative;
+	z-index: 11;
+}
+.block-header-top {
+	text-align: right;
+    padding: 13px 0;
+	position: absolute;	
+	top: 1%;
+	left: 0%;
+	width: 100%;
+	z-index: 2;
+	.btn {
+		margin-right: 30px;
+	}
+	.logo {
+		display: block;
+		padding-top: 20px;
+		img {
+			display: block;
+		}
+		.logo-mobile {
+			display: none;
+		}
+	}
+	.i-heart{
+		vertical-align: middle;
+		display: inline-block;
+		width: 26px;
+		height: 22px;
+		background: url('../images/website/i-heart.png') no-repeat; 
+		&:hover {
+			background: url('../images/website/b-heart.png') no-repeat; 
+		}
+	}
+}
+
+.book-header {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	.col-md-4 {
+		width: 30%;
+	}
+    .wrap-booking {
+    	text-align: center;
+    	background: rgba(80, 172, 191, 0.7);
+    	padding: 30px;
+    	border-radius: 10px;
+    	width: 40%;
+    	margin-top: 105px;
+    	.wrap-form {
+			h4 {
+	        	font-weight: normal;
+	        	font-style: italic;
+	        	color: #fff;
+	        }
+	        .selection span {
+	        	background: #e9e2d9;
+	        }
+    	}
+	    .btn {
+	    	padding: 11px 45px;
+	    	margin-top: 30px;
+	    }
+    }
+}
+
+.menu-right {
+	position: relative;
+	width: auto;
+	padding-right: 0px;
+    ul {
+		list-style: none;
+		text-align: right;
+		li {
+			a {
+				display: block;
+				padding: 20px 15px 20px 0px;
+				color: $black;
+				font-style: italic;
+				font-size: 16px;
+				position: relative;
+				border-bottom: 2px solid transparent;
+				  -moz-border-image: -moz-linear-gradient(left, transparent 45%, #0aa0b9 100%);
+				  -webkit-border-image: -webkit-linear-gradient(left, transparent 45%, #0aa0b9 100%);
+				  border-image: linear-gradient(to right, transparent 45%, #0aa0b9 100%);
+				  border-image-slice: 1;
+				@extend %tr-cl;
+				&:hover {
+					background: url('../images/website/hover-bg.png') no-repeat;
+					background-size: cover;
+				}
+			}
+		}
+    }
+}
+
+.navigation-main{
+	list-style: none;
+	margin: 0;
+	display: inline-block;
+	margin-right: 10px;
+	padding-top: 0;
+	>ul{
+		display: inline-block;
+		margin: 0px !important;
+		>li{
+			display: inline-block;
+			margin-left: 26px;
+			position: relative;
+			-webkit-transition: border .3s ease, padding .3s ease;
+			-moz-transition: border .3s ease, padding .3s ease;
+			-ms-transition: border .3s ease, padding .3s ease;
+			-o-transition: border .3s ease, padding .3s ease;
+			transition: border .3s ease, padding .3s ease;
+	        > a{
+			    display: block;
+				position: relative;
+				font-family: $supria;
+				color: $black;
+				font-size: 1.6rem;
+				&.is-active, &:hover {
+					text-decoration: none;
+					color: $blue-dark;
+				}
+			}
+			&:first-child{
+				margin-left: 0;
+			}
+			&:last-child {
+				display: none;
+			}
+		}
+	}
+}
+
+.social-language {
+	.icon-social {
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		background: $blue-dark;
+		color: $white;
+		font-size: 14px;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 18px;
+		margin-left: 5px;
+		-webkit-transition: background .25s ease;
+		   -moz-transition: background .25s ease;
+		    -ms-transition: background .25s ease;
+		     -o-transition: background .25s ease;
+		        transition: background .25s ease;
+		i {
+			display: inline-block;
+			font-size: 10px;
+			-webkit-transition: color .25s ease;
+			   -moz-transition: color .25s ease;
+			    -ms-transition: color .25s ease;
+			     -o-transition: color .25s ease;
+			        transition: color .25s ease;
+		}
+		&:hover {
+			background: $yellow;
+			i {
+				color: $white;
+			}
+		}
+	}
+	span {
+		display: inline-block;
+		padding: 0px;
+		color: $black;
+	}
+}
+
+.language  {
+	display: inline-block;
+	margin-bottom: 15px;
+	position: relative;
+	a {
+		display: inline-block;
+		margin-top: 2px;
+		color: $black;
+		font-weight: 400;
+		font-size: 14px;
+		text-transform: uppercase;
+		-webkit-transition: color .25s ease;
+		   -moz-transition: color .25s ease;
+		    -ms-transition: color .25s ease;
+		     -o-transition: color .25s ease;
+		        transition: color .25s ease;
+		&:hover {
+			text-decoration: none;
+			color: $blue-dark;
+		}
+		&.is-active {
+			display: block;
+		}
+	}
+}
+
+.overlay-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../images/website/header.png') no-repeat; 
+	background-size: 100%;
+}

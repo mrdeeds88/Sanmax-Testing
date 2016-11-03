@@ -1,0 +1,44 @@
+@charset 'UTF-8';
+
+/// Configuration and helpers
+@import
+  'utils/variables',
+  'utils/functions',
+  'utils/mixins',
+  'utils/helpers';
+
+/// Vendors
+@import
+  'vendor/jquery-ui-structure',
+  //'vendor/jquery-ui-theme',
+  'vendor/mq', //mq() - media query manager
+  'vendor/normalize', //reset
+  'vendor/media-queries', //reset
+  'vendor/icheck', 
+  'vendor/owl.carousel', 
+  'vendor/nouislider.min', 
+  'vendor/lightgallery', 
+  'vendor/animation', 
+  'vendor/select2.min'; //jquery ui rolled theme for CMS
+
+/// Base
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography';
+
+/// Layout
+@import
+  'layout/grid',
+  'layout/header',
+  'layout/footer';
+
+/// Components
+@import
+  'components/form',
+  'components/buttons';
+
+/// Page-specific
+@import
+  'pages/home';
+  

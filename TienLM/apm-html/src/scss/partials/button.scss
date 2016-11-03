@@ -1,0 +1,8 @@
+@import "../vendor/variables";
+@import "../vendor/mixins";
+
+.btn-yellow {
+    color: #001320;
+    background-color: $colorYellow;
+    /*border-color: #2e6da4;*/
+}

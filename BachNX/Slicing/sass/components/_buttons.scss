@@ -1,0 +1,174 @@
+/// Buttons
+/// @TODO: button type & status
+
+a:link, a:visited:link {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+a, a:visited {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+.btn-heart {
+    -webkit-transition: animation .25s ease;
+    -moz-transition: animation .25s ease;
+    -ms-transition: animation .25s ease;
+    -o-transition: animation .25s ease;
+    transition: animation .25s ease;
+    &:hover {
+      img {
+        animation: heartbeat 1s infinite;
+      }
+    }
+}
+
+.btn {
+    display: inline-block;
+    width: auto;
+    -webkit-appearance: none;
+    border: 1px solid $yellow;
+    border-radius: 10px;
+    outline: 0;
+    color: $black;
+    font-family: $supria;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 1em;
+    font-size: 1.6rem;
+    padding: 11px 12px;
+    background: $yellow;
+    @extend %trs-cl;
+    &:hover{
+        color: $yellow;
+        background-color: $white;
+        text-decoration: none;
+    }
+    &.btn-full{
+      width: 100%;
+      display: block;
+    }
+}
+
+.icon-sprites {
+    display: inline-block;
+    width: auto;
+    -webkit-appearance: none;
+    outline: 0;
+    background: url('../images/website/sprites.png') no-repeat;
+    &.icon-sprites-cal {
+      background-position: 0 0;
+      width: 16px;
+      height: 15px;
+    }
+}
+
+
+.bdrd{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  //border: 1px solid #A6E9FF;
+  color: $white; 
+  text-align: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: $blue-dark;
+  @extend %trs-cl;
+  &:hover{
+    background-color: #A6E9FF;
+    color: $white;
+    border-color: #A6E9FF;
+  }
+  i{
+    padding-left: 1px;
+    position: relative;
+    top: 1px;
+  }
+  &.bdrd-big {
+    width: 40px;
+    height: 40px;
+    line-height: 39px;
+    background: none;
+    border: 2px solid $white;
+    -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+            border-radius: 50%;
+    box-shadow: 0px 1px 4px #422D23;
+    i {
+        font-size: 20px;
+        padding-left: 0px;
+        text-shadow: 2px 3px 3px #000;
+    }
+  }
+  &.bdrd-small{
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+  }
+  &.bdrd-blue{
+    border-color: #00384a;
+    color: #00384a;
+    &:hover{
+      background-color: #00384a;
+      color: $white;
+      border-color: #00384a;
+    }
+  }
+  &.bdrd-bold{
+    border-color: #00384A;
+    color: #00384A;
+    &:hover{
+      color: #00384A;
+      background-color: $white;
+    }
+  }
+  &.bdrd-small{
+    height: 16px;
+    width: 16px;
+    line-height: 14px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: $white;
+    margin-left: 5px;
+  }
+}
